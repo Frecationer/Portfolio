@@ -1,0 +1,1 @@
+Pastikan sebelum melakukan perubahan, lakukan git fetch atau pull terlebih dahulu. Supaya tidak terjadi bentrok
