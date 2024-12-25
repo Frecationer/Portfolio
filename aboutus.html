@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FRECATIONER</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Boostrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -13,27 +15,28 @@
     <!-- logo -->
     <link rel="icon" href="img/Logo_1.png" type="image/x-icon">
 
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container">
             <a class="navbar-brand text-white" href="#">
                 <img src="img/Logo_1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                 FRECATIONER
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-2">
-                        <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white" href="aboutus.html">About Us</a>
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link text-white" href="project.html">Project</a>
@@ -42,68 +45,105 @@
                         <a class="nav-link text-white" href="">Blog</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="btn btn-outline-light" href="#contactus">Contact Us</a>
+                        <a class="nav-link text-white active" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="btn btn-outline-light" href="#contactus" data-bs-toggle="offcanvas"
+                        data-bs-target="#contactUs">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>    
+    </nav>
     <!-- Navbar End -->
 
-    <!-- Landing Page -->
-    <section class="page1">
-        <div class="container">
-            <div class="row vh-100 justify-content-center">
-                <div class="col-md-6" style="margin-top: 150px;">
-                    <p style="font-size: 2rem;">Hi, Introduce Us</p>
-                    <h1 style="font-weight: bold; font-size: 4rem;">FRECATIONER</h1>
-                    <p>Frecationer adalah komunitas belajar yang dirancang untuk mendukung individu yang ingin mengejar pengetahuan di bidang yang mereka minati secara bebas dan bertanggung jawab.</p>
+    <div class="offcanvas offcanvas-end custom-offcanvas" id="contactUs">
+        <div class="offcanvas-header">
+            <img src="img/Logo_1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+                FRECATIONER
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h5 class="offcanvas-title">Contact Us :</h5>
+            <h2 class="sub-heading">tell us something <br> what you need</h2>
+            <form>
+                <div class="content-contact">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama :</label>
+                        <input type="text" class="form-control custom-input" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email :</label>
+                        <input type="email" class="form-control custom-input" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="whatsapp" class="form-label">No WhatsApp :</label>
+                        <input type="text" class="form-control custom-input" id="whatsapp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Pesan :</label>
+                        <textarea class="form-control custom-input" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary custom-button">Kirim</button>
                 </div>
-                <div class="col-md-6" style="margin-top: 100px;">
-                    <img src="img/illustrasi about page.png" alt="" class="img-fluid" width="100%">
+            </form>
+        </div>
+    </div>
+
+    <div class="about-page mt-5">
+        <section class="landing-page d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 mt-5">
+                        <p class="fs-4">Hi, Introduce Us</p>
+                        <h1 class="fw-bold fs-1">FRECATIONER</h1>
+                        <p>Frecationer adalah komunitas belajar yang dirancang untuk mendukung individu yang ingin
+                            mengejar pengetahuan di bidang yang mereka minati secara bebas dan bertanggung jawab.</p>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <img src="img/illustrasi about page.png" alt="" class="img-fluid">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <div class="decorative-background"></div>
+    </div>
     <!-- Landing Page End -->
-    
+
     <!-- Visi Misi Start -->
     <section class="visimisi">
         <div class="container">
-            <div class="row justify-content-around mb-5">
-                <div class="col-md-6 bg-info p-5 text-end rounded-start-pill text-white">
-                    <h4 class="mb-3">Our Vision</h4>
-                    <p>Menjadi platform edukasi yang membebaskan dan memberdayakan, di mana setiap individu dapat mencapai potensi maksimal mereka melalui pembelajaran mandiri yang bertanggung jawab dan terarah.</p>
-                </div>
-                <div class="col-md-6 bg-primary p-5 rounded-end-pill text-white">
-                    <h4 class="mb-3">Our Mission</h4>
-                    <p>
-                        <i class="bi bi-star-fill"></i> Menyediakan ruang belajar yang kolaboratif dan penuh dukungan. <br>
-                        <i class="bi bi-star-fill"></i> Mendorong anggota untuk mengikuti roadmap pembelajaran yang terstruktur hingga tuntas. <br>
-                        <i class="bi bi-star-fill"></i> Memfasilitasi proses pembelajaran yang terukur, dengan progres yang teratur dan keterlibatan aktif melalui pertemuan mingguan dan pelaporan hasil.
-                    </p>
-                </div>
+            <div class="dotted-border mb-5">
+                <h2>Our Vision</h2>
+                <p>Menjadi platform edukasi yang membebaskan dan memberdayakan, di mana setiap individu dapat mencapai
+                    potensi maksimal mereka melalui pembelajaran mandiri yang bertanggung jawab dan terarah.</p>
+            </div>
+            <div class="dotted-border">
+                <h2>Our Mission</h2>
+                <p>- Menyediakan ruang belajar yang kolaboratif dan penuh dukungan, Mendorong anggota untuk mengikuti
+                    roadmap pembelajaran yang terstruktur hingga tuntas.</p>
+                <p>- Memfasilitasi proses pembelajaran yang terukur, dengan progres yang teratur dan keterlibatan aktif
+                    melalui pertemuan mingguan dan pelaporan hasil.</p>
             </div>
         </div>
     </section>
     <!-- Visi Misi End -->
 
     <!-- Foto Bersama -->
-    <section>
-        <img src="" alt="">
+    <section class="fotbar">
+        <img src="img/fotbar.png" alt="">
     </section>
     <!-- Foto Bersama -->
 
     <!-- Our Team Start -->
     <section class="ourteam">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,101.3C384,128,480,192,576,202.7C672,213,768,171,864,138.7C960,107,1056,85,1152,101.3C1248,117,1344,171,1392,197.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
         <div class="container">
             <div class="row text-center">
-                <h2 class="mt-5">This is our Community</h2>
+                <h2><strong>This is our Community</strong></h2>
             </div>
-            <div class="row d-flex justify-content-center mt-5 mb-5">
+            <div class="row d-flex justify-content-center mt-4 mb-5">
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/" class="text-decoration-none">
@@ -111,10 +151,10 @@
                             </a>
                             <p class="card-text">Back-End Development</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/" class="text-decoration-none">
@@ -122,10 +162,10 @@
                             </a>
                             <p class="card-text">Back-End Development</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/" class="text-decoration-none">
@@ -133,11 +173,11 @@
                             </a>
                             <p class="card-text">Front-End Development</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
 
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/" class="text-decoration-none">
@@ -145,10 +185,10 @@
                             </a>
                             <p class="card-text">Front-End Development</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/" class="text-decoration-none">
@@ -156,10 +196,10 @@
                             </a>
                             <p class="card-text">Front-End Development</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/vousmevoyez.a" class="text-decoration-none">
@@ -167,10 +207,10 @@
                             </a>
                             <p class="card-text">Front-End Development</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/" class="text-decoration-none">
@@ -178,10 +218,10 @@
                             </a>
                             <p class="card-text">Front-End Development</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/" class="text-decoration-none">
@@ -189,10 +229,10 @@
                             </a>
                             <p class="card-text">Front-End Development</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/" class="text-decoration-none">
@@ -200,10 +240,10 @@
                             </a>
                             <p class="card-text">Web Desain</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/" class="text-decoration-none">
@@ -211,10 +251,10 @@
                             </a>
                             <p class="card-text">Web Desain</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-md-3 border border-1 p-3 m-4 bg-white">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card">
                         <img src="img/user.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="www.instagram.com/" class="text-decoration-none">
@@ -222,9 +262,9 @@
                             </a>
                             <p class="card-text">Social Media Specialist</p>
                         </div>
-                      </div>
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -234,19 +274,21 @@
     <footer class="bg-black text-white">
         <div class="container">
             <div class="row mt-5">
-                <div class="col-6 col-md-4 mt-5">
+                <div class="col-12 col-md-4 mt-5 text-start text-md-start">
                     <a class="text-white text-decoration-none" href="#">
                         <img src="img/Logo_1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                            FRECATIONER
+                        FRECATIONER
                     </a>
                 </div>
-                <div class="col-6 col-md-4 mt-5">
+
+                <div class="col-12 col-md-4 mt-5 text-start text-md-start">
                     <h6>Email</h6>
                     <a class="text-white" href="#">frecationer.official@gmail.com</a>
-                    <h6 class="mt-4">Addres</h6>
+                    <h6 class="mt-4">Address</h6>
                     <p>East Java - Indonesia</p>
                 </div>
-                <div class="col mt-5">
+
+                <div class="col-12 col-md-2 mt-5 text-start text-md-start">
                     <h6>Home</h6>
                     <ul class="list-unstyled pt-2">
                         <li class="py-1">About Us</li>
@@ -254,17 +296,21 @@
                         <li class="py-1">Blog</li>
                     </ul>
                 </div>
-                <div class="col mt-5">
+
+                <div class="col-12 col-md-2 mt-5 text-start mb-3 text-md-start">
                     <h5>Follow Us</h5>
-                    <a href=""><img src="img/icon discord.png" alt=""></a>
-                    <a href=""><img src="img/icon instagram.png" alt=""></a>
+                    <a href="#"><img src="img/icon discord.png" alt=""></a>
+                    <a href="#"><img src="img/icon instagram.png" alt=""></a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Footer End -->    
+    <!-- Footer End -->
 
     <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,50 +1,638 @@
 nav {
-  background: linear-gradient(to right, #1c42fd, #3ce9e7);
+  background: linear-gradient(to right, #0E37FF, #00B4BA);
   font-size: 16px;
-  font-weight: 500;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+  transform: none;
+  width: 40%;
+}
+
+.custom-offcanvas {
+  background: linear-gradient(to bottom, #1c42fd, #3ce9e7);
+  color: white;
+  padding: 10px 20px;
+}
+
+.offcanvas-header {
+  border-bottom: none;
+}
+
+.sub-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.content-contact {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #000000;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.custom-input {
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid #1C42FD;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.custom-button {
+  background-color: #0047ff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+}
+
+.custom-button:hover {
+  background-color: #002d99;
+}
+
+.btn-close {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .page1 {
-  min-height: 100vh;
-  background-image: url(img/gambar\ hiasan.png);
-  background-repeat: no-repeat;
   background-position-y: bottom;
   margin-bottom: 100px;
 }
+
 hr {
   border: 0;
   height: 3px;
-  background: linear-gradient(to right, #1c42fd, #3ce9e7); /* Gradasi warna */
+  background: linear-gradient(to right, #1c42fd, #3ce9e7);
 }
+
 .card {
   background: transparent;
   border: none;
 }
-/* .bgcolor {
-    background: linear-gradient(to bottom, #3ce9e7, #1c42fd);
-} */
+
+.landing-page {
+  position: relative;
+  margin-bottom: -200px;
+}
+
+.project {
+  background-position-y: bottom;
+  margin-bottom: 100px;
+}
+
 .showcase {
   border: 2px dashed #3ce9e7;
   padding: 30px;
   background-color: #f8f9fa;
 }
+
 .showcase img {
   max-width: 90%;
   border-radius: 5px;
 }
+
 .developer-info {
   font-size: 0.9rem;
   margin-top: 10px;
   color: #1B1833;
 }
+
 .read-more {
   color: #007bff;
   font-weight: bold;
   text-decoration: none;
 }
+
 .read-more:hover {
   text-decoration: underline;
 }
+
 .custom-font-size {
-    font-size: 1.1rem;
-    line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
+
+.col-12.text-start p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.col-12.text-start h5 {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.decorative-background {
+  background-image: url('../img/gambar_hiasan.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  margin-top: -30px;
+}
+
+.decorative-background2 {
+  background-image: url('../img/gambar_hiasan.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  margin-top: -30px;
+}
+
+.decorative-background1 {
+  background-image: url('../img/gambar_hiasan.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  transform: rotate(180deg);
+}
+
+.container.project-detail {
+  margin-top: -180px;
+  position: relative;
+  top: -10px;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.hero-section {
+  text-align: center;
+  margin-top: -100px;
+  position: relative;
+  top: -10px;
+  margin-bottom: -200px;
+}
+
+.class-icon {
+  width: 80%;
+  height: auto;
+  margin-top: -250px;
+}
+
+.header-box {
+  margin-top: 10rem;
+}
+
+.section-content {
+  color: #000;
+  line-height: 1.8;
+}
+
+.fw-bold-custom {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.btn-custom {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 2rem;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+.section-divider {
+  border-top: 2px solid #1c42fd;
+  margin: 1rem auto;
+}
+
+.header-box {
+  display: inline-block;
+  border: 2px solid #000;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.detail_class {
+  margin-top: 6rem;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #1c42fd, #3ce9e7);
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #0056b3, #33c4c1);
+  color: #ffffff;
+}
+
+.border-color {
+  margin-top: 40px;
+  background-color: #F4F7FE;
+  background: linear-gradient(#F4F7FE, #F4F7FE) padding-box,
+    linear-gradient(to right, #1c42fd, #3ce9e7) border-box;
+  border-radius: 50em;
+  border: 3px solid transparent;
+}
+
+.ourteam {
+  margin-top: 5rem;
+}
+
+.fotbar img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+.visimisi {
+  background: linear-gradient(to top, #1c42fd94, #3ce9e6cb);
+  padding: 4rem 6rem;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+
+.visimisi h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.visimisi p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+
+.dotted-border {
+  border: 2px dashed #000;
+  border-radius: 150px;
+  padding: 1.5rem 5rem;
+  margin: 20px 0;
+}
+
+.ourteam {
+  margin-top: 5rem;
+}
+
+.ourteam .card {
+  width: 100%;
+  max-width: 15rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px){
+  .decorative-background {
+    background-image: url('../img/gambar_hiasan.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    margin-top: 140px;
+  }
+
+  .decorative-background1 {
+    background-image: url('../img/gambar_hiasan.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    transform: rotate(180deg);
+    margin-bottom: 5rem;
+  }
+
+  .decorative-background2 {
+    background-image: url('../img/gambar_hiasan.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    position: relative;
+  }
+  .page3 .container {
+    padding: 0 10px;
+  }
+
+  .page3 .row.text-center h3 {
+    font-size: 1.5rem;
+  }
+
+  .page3 .row.justify-content-md-around .col-md-3 {
+    margin-bottom: 2rem;
+  }
+
+  .page3 .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .page3 .card img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+
+  .page3 .card-body {
+    padding: 1rem;
+  }
+
+  .page3 .card-title {
+    font-size: 1rem;
+  }
+
+  .page3 .card a {
+    font-size: 0.9rem;
+  }
+  .page2 .container {
+    padding: 0 15px;
+  }
+
+  .page2 .row.text-center h4 {
+    font-size: 1.5rem;
+  }
+
+  .page2 .row.text-center p {
+    font-size: 1rem;
+  }
+
+  .page2 .row.justify-content-center .col-md {
+    margin: 3rem 0;
+  }
+
+  .page2 .row.align-item-center .col-md-2 {
+    margin: 1rem 0;
+  }
+
+  .page2 .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .page2 .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .page2 .border-color {
+    margin-top: 40px;
+    background-color: #F4F7FE;
+    background: linear-gradient(#F4F7FE, #F4F7FE) padding-box,
+      linear-gradient(to bottom, #1c42fd, #3ce9e7) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+  }
+}
+
+@media (max-width: 767px) {
+  .decorative-background {
+    background-image: url('../img/gambar_hiasan.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 100%;
+    position: relative;
+    margin-top: 190px;
+  }
+
+  .decorative-background1 {
+    background-image: url('../img/gambar_hiasan.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 100%;
+    transform: rotate(180deg);
+    margin-bottom: 5rem;
+  }
+
+  .decorative-background2 {
+    background-image: url('../img/gambar_hiasan.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .dotted-border {
+    border: 2px dashed #000;
+    border-radius: 50px;
+    padding: 1.5rem 1rem;
+  }
+
+  .page2 .container {
+    padding: 0 15px;
+  }
+
+  .page2 .row.text-center h4 {
+    font-size: 1.5rem;
+  }
+
+  .page2 .row.text-center p {
+    font-size: 1rem;
+  }
+
+  .page2 .row.justify-content-center .col-md {
+    margin: 2rem 0;
+  }
+
+  .page2 .row.align-item-center .col-md-2 {
+    margin: 1rem 0;
+  }
+
+  .page2 .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .page2 .card img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+
+  .page2 .border-color {
+    margin-top: 40px;
+    background-color: #F4F7FE;
+    background: linear-gradient(#F4F7FE, #F4F7FE) padding-box,
+      linear-gradient(to bottom, #1c42fd, #3ce9e7) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+  }
+
+  .page3 .container {
+    padding: 0 10px;
+  }
+
+  .page3 .row.text-center h3 {
+    font-size: 1.5rem;
+  }
+
+  .page3 .row.justify-content-md-around .col-md-3 {
+    margin-bottom: 2rem;
+  }
+
+  .page3 .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .page3 .card img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+
+  .page3 .card-body {
+    padding: 1rem;
+  }
+
+  .page3 .card-title {
+    font-size: 1rem;
+  }
+
+  .page3 .card a {
+    font-size: 0.9rem;
+  }
+
+  .detail_class {
+    margin-top: 3rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-section p {
+    font-size: 0.9rem;
+    margin-top: 3rem;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .container .text-center {
+    margin: 2rem 0;
+  }
+
+  .class-icon {
+    max-width: 200px;
+    margin-top: 1rem;
+  }
+
+  .ourteam .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ourteam .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .main-content {
+    padding-left: 25px;
+  }
+
+  .main-content .row {
+    flex-direction: column;
+  }
+
+  .main-content .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-content .showcase {
+    padding: 15px;
+  }
+
+  .main-content .showcase img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content .developer-info {
+    font-size: 0.8rem;
+  }
+
+  .main-content .read-more {
+    font-size: 0.9rem;
+  }
+
+  .main-content .custom-font-size {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: none;
+    width: 100%;
+  }
+}
+
