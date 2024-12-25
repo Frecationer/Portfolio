@@ -96,6 +96,10 @@ hr {
   background: linear-gradient(to right, #1c42fd, #3ce9e7);
 }
 
+.page3{
+  background: linear-gradient(to top, #1c42fd94, #3ce9e6cb);
+}
+
 .card {
   background: transparent;
   border: none;
