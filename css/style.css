@@ -100,6 +100,21 @@ hr {
   background: linear-gradient(to top, #1c42fd94, #3ce9e6cb);
 }
 
+.faq-icon {
+  font-size: 4rem;
+  margin-right: 10px;
+  color: #000;
+}
+
+.faq-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.faq-link p{
+  margin-top: 1rem;
+}
+
 .card {
   background: transparent;
   border: none;
@@ -113,6 +128,28 @@ hr {
 .project {
   background-position-y: bottom;
   margin-bottom: 100px;
+}
+
+.scroll-to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to bottom, #1c42fd, #3ce9e7);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin-right: 5rem;
+  margin-bottom: 4rem;
+}
+
+.scroll-to-top i {
+  font-size: 1.5rem;
 }
 
 .showcase {
@@ -442,6 +479,24 @@ hr {
 }
 
 @media (max-width: 767px) {
+  .scroll-to-top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, #1c42fd, #3ce9e7);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+
   .decorative-background {
     background-image: url('../img/gambar_hiasan.png');
     background-size: contain;
