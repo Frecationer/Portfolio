@@ -1,17 +1,18 @@
 nav {
-  background: linear-gradient(to right, #0E37FF, #00B4BA);
+  background: linear-gradient(to right, #0e37ff, #00b4ba);
   font-size: 16px;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-link.active {
   font-weight: bold;
 }
 
-.offcanvas.show:not(.hiding), .offcanvas.showing {
+.offcanvas.show:not(.hiding),
+.offcanvas.showing {
   transform: none;
   width: 40%;
 }
@@ -47,7 +48,7 @@ body {
   max-width: 400px;
   margin-bottom: 1rem;
   background-color: rgba(255, 255, 255, 0.4);
-  border: 2px solid #1C42FD;
+  border: 2px solid #1c42fd;
 }
 
 .custom-input:focus {
@@ -96,7 +97,7 @@ hr {
   background: linear-gradient(to right, #1c42fd, #3ce9e7);
 }
 
-.page3{
+.page3 {
   background: linear-gradient(to top, #1c42fd94, #3ce9e6cb);
 }
 
@@ -111,7 +112,7 @@ hr {
   color: inherit;
 }
 
-.faq-link p{
+.faq-link p {
   margin-top: 1rem;
 }
 
@@ -166,7 +167,7 @@ hr {
 .developer-info {
   font-size: 0.9rem;
   margin-top: 10px;
-  color: #1B1833;
+  color: #1b1833;
 }
 
 .read-more {
@@ -195,7 +196,7 @@ hr {
 }
 
 .decorative-background {
-  background-image: url('../img/gambar_hiasan.png');
+  background-image: url("../img/gambar_hiasan.png");
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -206,7 +207,7 @@ hr {
 }
 
 .decorative-background2 {
-  background-image: url('../img/gambar_hiasan.png');
+  background-image: url("../img/gambar_hiasan.png");
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -217,7 +218,7 @@ hr {
 }
 
 .decorative-background1 {
-  background-image: url('../img/gambar_hiasan.png');
+  background-image: url("../img/gambar_hiasan.png");
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -317,8 +318,8 @@ hr {
 
 .border-color {
   margin-top: 40px;
-  background-color: #F4F7FE;
-  background: linear-gradient(#F4F7FE, #F4F7FE) padding-box,
+  background-color: #f4f7fe;
+  background: linear-gradient(#f4f7fe, #f4f7fe) padding-box,
     linear-gradient(to right, #1c42fd, #3ce9e7) border-box;
   border-radius: 50em;
   border: 3px solid transparent;
@@ -370,9 +371,9 @@ hr {
   margin: 0 auto;
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
   .decorative-background {
-    background-image: url('../img/gambar_hiasan.png');
+    background-image: url("../img/gambar_hiasan.png");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
@@ -383,7 +384,7 @@ hr {
   }
 
   .decorative-background1 {
-    background-image: url('../img/gambar_hiasan.png');
+    background-image: url("../img/gambar_hiasan.png");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
@@ -394,7 +395,7 @@ hr {
   }
 
   .decorative-background2 {
-    background-image: url('../img/gambar_hiasan.png');
+    background-image: url("../img/gambar_hiasan.png");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
@@ -470,8 +471,8 @@ hr {
 
   .page2 .border-color {
     margin-top: 40px;
-    background-color: #F4F7FE;
-    background: linear-gradient(#F4F7FE, #F4F7FE) padding-box,
+    background-color: #f4f7fe;
+    background: linear-gradient(#f4f7fe, #f4f7fe) padding-box,
       linear-gradient(to bottom, #1c42fd, #3ce9e7) border-box;
     border-radius: 50em;
     border: 3px solid transparent;
@@ -498,7 +499,7 @@ hr {
   }
 
   .decorative-background {
-    background-image: url('../img/gambar_hiasan.png');
+    background-image: url("../img/gambar_hiasan.png");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
@@ -509,7 +510,7 @@ hr {
   }
 
   .decorative-background1 {
-    background-image: url('../img/gambar_hiasan.png');
+    background-image: url("../img/gambar_hiasan.png");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
@@ -520,7 +521,7 @@ hr {
   }
 
   .decorative-background2 {
-    background-image: url('../img/gambar_hiasan.png');
+    background-image: url("../img/gambar_hiasan.png");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
@@ -569,8 +570,8 @@ hr {
 
   .page2 .border-color {
     margin-top: 40px;
-    background-color: #F4F7FE;
-    background: linear-gradient(#F4F7FE, #F4F7FE) padding-box,
+    background-color: #f4f7fe;
+    background: linear-gradient(#f4f7fe, #f4f7fe) padding-box,
       linear-gradient(to bottom, #1c42fd, #3ce9e7) border-box;
     border-radius: 50em;
     border: 3px solid transparent;
@@ -689,9 +690,9 @@ hr {
     font-size: 1rem;
     line-height: 1.5;
   }
-  .offcanvas.show:not(.hiding), .offcanvas.showing {
+  .offcanvas.show:not(.hiding),
+  .offcanvas.showing {
     transform: none;
     width: 100%;
   }
 }
-
