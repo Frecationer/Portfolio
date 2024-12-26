@@ -16,10 +16,15 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body id="top">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        data-aos="fade-down"
+        data-aos-duration="1000">
         <div class="container">
             <a class="navbar-brand text-white" href="#">
                 <img src="img/Logo_1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
@@ -85,7 +90,9 @@
         </div>
     </div>
 
-    <section class="project-detail mt-5">
+    <section class="project-detail mt-5"
+            data-aos="zoom-in-up"
+            data-aos-duration="1300">
         <div class="decorative-background1"></div>
         <div class="container project-detail d-flex align-items-start justify-content-start">
             <div class="row w-100">
@@ -223,6 +230,10 @@
     <!-- Footer End -->
 
     <!-- JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
