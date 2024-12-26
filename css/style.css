@@ -120,6 +120,10 @@ hr {
   border: none;
 }
 
+.card a{
+  text-decoration: none;
+}
+
 .landing-page {
   position: relative;
   margin-bottom: -200px;
