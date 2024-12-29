@@ -19,14 +19,19 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        data-aos="fade-down"
+        data-aos-duration="1000">
         <div class="container">
             <a class="navbar-brand text-white" href="#">
-                <img src="img/Logo_1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="img/Logo_1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
                 FRECATIONER
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -94,36 +99,65 @@
         <section class="landing-page d-flex justify-content-center align-items-center">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 mt-5">
+                    <div class="col-md-6 mt-5"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="1500">
                         <p class="fs-4">Hi, Introduce Us</p>
                         <h1 class="fw-bold fs-1">FRECATIONER</h1>
                         <p>Frecationer adalah komunitas belajar yang dirancang untuk mendukung individu yang ingin
                             mengejar pengetahuan di bidang yang mereka minati secara bebas dan bertanggung jawab.</p>
                     </div>
-                    <div class="col-md-6 mt-5">
+                    <div class="col-md-6 mt-5"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        data-aos-delay="1500">
                         <img src="img/illustrasi about page.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
-        <div class="decorative-background"></div>
+        <div class="decorative-background"
+            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500"></div>
     </div>
     <!-- Landing Page End -->
 
     <!-- Visi Misi Start -->
     <section class="visimisi">
         <div class="container">
-            <div class="dotted-border mb-5">
-                <h2>Our Vision</h2>
-                <p>Menjadi platform edukasi yang membebaskan dan memberdayakan, di mana setiap individu dapat mencapai
-                    potensi maksimal mereka melalui pembelajaran mandiri yang bertanggung jawab dan terarah.</p>
+            <div class="dotted-border mb-5"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="1000">
+                <h2
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="1500">Our Vision</h2>
+                <p
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="1500">
+                Menjadi platform edukasi yang membebaskan dan memberdayakan, di mana setiap individu dapat mencapai potensi maksimal mereka melalui pembelajaran mandiri yang bertanggung jawab dan terarah.</p>
             </div>
-            <div class="dotted-border">
-                <h2>Our Mission</h2>
-                <p>- Menyediakan ruang belajar yang kolaboratif dan penuh dukungan, Mendorong anggota untuk mengikuti
-                    roadmap pembelajaran yang terstruktur hingga tuntas.</p>
-                <p>- Memfasilitasi proses pembelajaran yang terukur, dengan progres yang teratur dan keterlibatan aktif
-                    melalui pertemuan mingguan dan pelaporan hasil.</p>
+            <div class="dotted-border"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="1000">
+                <h2
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="1500">
+                Our Mission</h2>
+                <p
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="1500">
+                - Menyediakan ruang belajar yang kolaboratif dan penuh dukungan, Mendorong anggota untuk mengikuti roadmap pembelajaran yang terstruktur hingga tuntas.</p>
+                <p
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="1500">
+                - Memfasilitasi proses pembelajaran yang terukur, dengan progres yang teratur dan keterlibatan aktif melalui pertemuan mingguan dan pelaporan hasil.</p>
             </div>
         </div>
     </section>
@@ -309,6 +343,11 @@
     <!-- Footer End -->
 
     <!-- JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
