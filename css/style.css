@@ -3,8 +3,17 @@ nav {
   font-size: 16px;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins";
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link.active {
@@ -87,7 +96,6 @@ body {
 }
 
 .page1 {
-  background-position-y: bottom;
   margin-bottom: 100px;
 }
 
@@ -135,7 +143,7 @@ hr {
   margin-bottom: 100px;
 }
 
-.scroll-to-top {
+.scroll-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -152,7 +160,7 @@ hr {
   z-index: 1000;
 }
 
-.scroll-to-top i {
+.scroll-top i {
   font-size: 1.5rem;
 }
 
@@ -374,6 +382,20 @@ hr {
   margin: 0 auto;
 }
 
+.collapse .col-md-10{
+  margin: auto;
+  width: 74%;
+}
+
+.p-3.mb-2.bg-dark-subtle.text-dark-emphasis{
+  margin: auto;
+  width: 685px;
+}
+
+.margin-project{
+  margin-left: 10px;
+}
+
 @media (max-width: 900px) {
   .decorative-background {
     background-image: url("../img/gambar_hiasan.png");
@@ -480,27 +502,14 @@ hr {
     border-radius: 50em;
     border: 3px solid transparent;
   }
+
+  .p-3.mb-2.bg-dark-subtle.text-dark-emphasis{
+    margin: auto;
+    width: 550px;
+  }
 }
 
 @media (max-width: 767px) {
-  .scroll-to-top {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(to bottom, #1c42fd, #3ce9e7);
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-  }
-
   .decorative-background {
     background-image: url("../img/gambar_hiasan.png");
     background-size: contain;
@@ -509,7 +518,7 @@ hr {
     height: 210px;
     width: 100%;
     position: relative;
-    margin-top: 190px;
+    margin-top: 100px;
   }
 
   .decorative-background1 {
@@ -566,7 +575,7 @@ hr {
   }
 
   .page2 .card img {
-    width: 80%;
+    width: 50%;
     height: auto;
     margin: auto;
   }
@@ -635,10 +644,6 @@ hr {
     margin-top: 3rem;
   }
 
-  .container {
-    padding: 0 15px;
-  }
-
   .container .text-center {
     margin: 2rem 0;
   }
@@ -697,5 +702,18 @@ hr {
   .offcanvas.showing {
     transform: none;
     width: 100%;
+  }
+
+  .p-3.mb-2.bg-dark-subtle.text-dark-emphasis{
+    margin: auto;
+    width: 350px;
+  }
+
+  .img-fluid{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

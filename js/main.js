@@ -1,17 +1,25 @@
-window.onscroll = function() {
-    scrollFunction();
-  };
+// window.addEventListener('scroll', function() {
+//   var scrollTopButton = document.querySelector('.scroll-to-top');
+//   if (window.scrollY > 100) {
+//     scrollTopButton.style.display = 'block';
+//   } else {
+//     scrollTopButton.style.display = 'none';
+//   }
+// });
+let scrollTop = document.querySelector('.scroll-top');
 
-  function scrollFunction() {
-    const scrollToTopButton = document.querySelector('.scroll-to-top');
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      scrollToTopButton.style.display = "block";
-    } else {
-      scrollToTopButton.style.display = "block";
+  function toggleScrollTop() {
+    if (scrollTop) {
+      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
-
-  document.querySelector('.scroll-to-top').addEventListener('click', function(event) {
-    event.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  scrollTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
+
+  window.addEventListener('load', toggleScrollTop);
+  document.addEventListener('scroll', toggleScrollTop);

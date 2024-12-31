@@ -22,235 +22,225 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
-        data-aos="fade-down"
-      data-aos-duration="1000">
-        <div class="container">
-            <a class="navbar-brand text-white" href="#">
+    <div class="container-fluid body">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-aos="fade-down" data-aos-duration="1000">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="img/Logo_1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+                    FRECATIONER
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white active" href="project.html">Project</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="btn btn-outline-light" href="#contactus" data-bs-toggle="offcanvas"
+                                data-bs-target="#contactUs">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Contact Us Start -->
+        <div class="offcanvas offcanvas-end custom-offcanvas" id="contactUs">
+            <div class="offcanvas-header">
                 <img src="img/Logo_1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
                 FRECATIONER
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white active" href="project.html">Project</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white" href="">Blog</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white" href="aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="btn btn-outline-light" href="#contactus" data-bs-toggle="offcanvas"
-                        data-bs-target="#contactUs">Contact Us</a>
-                    </li>
-                </ul>
+                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h5 class="offcanvas-title">Contact Us :</h5>
+                <h2 class="sub-heading">tell us something <br> what you need</h2>
+                <form>
+                    <div class="content-contact">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama :</label>
+                            <input type="text" class="form-control custom-input" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email :</label>
+                            <input type="email" class="form-control custom-input" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="whatsapp" class="form-label">No WhatsApp :</label>
+                            <input type="text" class="form-control custom-input" id="whatsapp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Pesan :</label>
+                            <textarea class="form-control custom-input" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary custom-button">Kirim</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </nav>
+        <!-- Contact Us End -->
 
-    <div class="offcanvas offcanvas-end custom-offcanvas" id="contactUs">
-        <div class="offcanvas-header">
-            <img src="img/Logo_1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
-                FRECATIONER
-            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <h5 class="offcanvas-title">Contact Us :</h5>
-            <h2 class="sub-heading">tell us something <br> what you need</h2>
-            <form>
-                <div class="content-contact">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nama :</label>
-                        <input type="text" class="form-control custom-input" id="name">
+        <!-- Project Start -->
+        <div class="project-page">
+            <div class="project mt-5">
+                <section class="landing-page d-flex justify-content-center align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">
+                                <h1 class="fw-bold fs-1 mb-3">Where everyone deserve a freedom to learn</h1>
+                                <p>Frecationer adalah komunitas belajar yang dirancang untuk mendukung individu yang
+                                    ingin
+                                    mengejar
+                                    pengetahuan di bidang yang mereka minati secara bebas dan bertanggung jawab.</p>
+                            </div>
+                            <div class="col-md-6 mt-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500">
+                                <img src="img/illustrasi project page.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="background"></div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email :</label>
-                        <input type="email" class="form-control custom-input" id="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="whatsapp" class="form-label">No WhatsApp :</label>
-                        <input type="text" class="form-control custom-input" id="whatsapp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Pesan :</label>
-                        <textarea class="form-control custom-input" id="message" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary custom-button">Kirim</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div class="project mt-5">
-        <section class="landing-page d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="row justify-content-center align-items-center mt-5">
-                    <div class="col-md-6"
-                        data-aos="fade-right"
-                        data-aos-duration="1000"
-                        data-aos-delay="1500">
-                        <h1 class="fw-bold fs-1 mb-3">Where everyone deserve a freedom to learn</h1>
-                        <p>Frecationer adalah komunitas belajar yang dirancang untuk mendukung individu yang ingin
-                            mengejar
-                            pengetahuan di bidang yang mereka minati secara bebas dan bertanggung jawab.</p>
-                    </div>
-                    <div class="col-md-6"
-                        data-aos="fade-left"
-                        data-aos-duration="1000"
-                        data-aos-delay="1500">
-                        <img src="img/illustrasi project page.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="background"></div>
+                </section>
+                <div class="decorative-background" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
                 </div>
             </div>
-        </section>
-        <div class="decorative-background" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500"></div>
-    </div>
 
-    <div class="main-content">
-        <section>
-            <div class="container">
-                <div class="row text-center"
-                    data-aos="fade-down"
-                    data-aos-duration="1000">
-                    <hr>
-                    <h4><strong>From Zero To Hero</strong></h4>
-                    <p>
-                        Difficult life is not a barrier.<br />In fact, it becomes a whip to
-                        move forward.
-                    </p>
-                    <hr>
-                </div>
-                <div class="row mt-5">
-                    <div class="row showcase col-md-12"
-                        data-aos="fade-right"
-                        data-aos-duration="1000">
-                        <div class="col-md-6">
-                            <img src="img/project1.png" alt="Project Image" class="img-fluid">
-                            <p class="developer-info fs-6 mb-0">developed by </p>
-                            <ol class="list-unstyled mt-0 fs-6">
-                                <li class="nama-developer fw-bold">
-                                    Andi rahmad wijaya
-                                </li>
-                            </ol>
-                            <a href="detail_project.html" class="read-more">Read More</a>
-                        </div>
-                        <div class="col-md-6 d-flex flex-column text-end">
-                            <h5 class="mt-4 mb-4 fs-3"><strong>Showcase Project</strong></h5>
-                            <p class="custom-font-size">
-                                Project adalah aktivitas atau kegiatan yang telah direncanakan
-                                untuk diselesaikan dalam waktu yang telah ditentukan dan
-                                didalamnya dialokasikan biayanya. Definisi lain, project adalah
-                                pekerjaan yang bersifat unik dan sementara.
-                            </p>
+            <section>
+                <div class="container">
+                    <div class="row text-center" data-aos="fade-down" data-aos-duration="1000">
+                        <hr>
+                        <h4><strong>From Zero To Hero</strong></h4>
+                        <p>
+                            Difficult life is not a barrier.<br />In fact, it becomes a whip to
+                            move forward.
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="row mt-5 margin-project">
+                        <div class="row showcase col-md-12" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="col-md-6">
+                                <img src="img/project1.png" alt="Project Image" class="img-fluid">
+                                <p class="developer-info fs-6 mb-0">developed by </p>
+                                <ol class="list-unstyled mt-0 fs-6">
+                                    <li class="nama-developer fw-bold">
+                                        Andi rahmad wijaya
+                                    </li>
+                                </ol>
+                                <a href="detail_project.html" class="read-more">Read More</a>
+                            </div>
+                            <div class="col-md-6 d-flex flex-column text-end">
+                                <h5 class="mt-4 mb-4 fs-3"><strong>Showcase Project</strong></h5>
+                                <p class="custom-font-size">
+                                    Project adalah aktivitas atau kegiatan yang telah direncanakan
+                                    untuk diselesaikan dalam waktu yang telah ditentukan dan
+                                    didalamnya dialokasikan biayanya. Definisi lain, project adalah
+                                    pekerjaan yang bersifat unik dan sementara.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-
-        <section>
-            <div class="container">
-                <div class="row mt-5">
-                    <div class="row showcase col-md-12"
-                    data-aos="fade-left"
-                    data-aos-duration="1000">
-                        <div class="col-md-6 d-flex flex-column text-start">
-                            <h5 class="mt-4 mb-4 fs-3"><strong>Showcase Project</strong></h5>
-                            <p class="custom-font-size">
-                                Project adalah aktivitas atau kegiatan yang telah direncanakan
-                                untuk diselesaikan dalam waktu yang telah ditentukan dan
-                                didalamnya dialokasikan biayanya. Definisi lain, project adalah
-                                pekerjaan yang bersifat unik dan sementara.
-                            </p>
-                        </div>
-                        <div class="col-md-6 text-end">
-                            <img src="img/project2.png" alt="Project Image" class="img-fluid">
-                            <p class="developer-info fs-6 mb-0">developed by </p>
-                            <ol class="list-unstyled mt-0 fs-6">
-                                <li class="nama-developer fw-bold">
-                                    Rahmad wijaya
-                                </li>
-                            </ol>
-                            <a href="detail_project.html" class="read-more">Read More</a>
+            <section>
+                <div class="container">
+                    <div class="row mt-5 margin-project">
+                        <div class="row showcase col-md-12" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="col-md-6 d-flex flex-column text-start">
+                                <h5 class="mt-4 mb-4 fs-3"><strong>Showcase Project</strong></h5>
+                                <p class="custom-font-size">
+                                    Project adalah aktivitas atau kegiatan yang telah direncanakan
+                                    untuk diselesaikan dalam waktu yang telah ditentukan dan
+                                    didalamnya dialokasikan biayanya. Definisi lain, project adalah
+                                    pekerjaan yang bersifat unik dan sementara.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <img src="img/project2.png" alt="Project Image" class="img-fluid">
+                                <p class="developer-info fs-6 mb-0">developed by </p>
+                                <ol class="list-unstyled mt-0 fs-6">
+                                    <li class="nama-developer fw-bold">
+                                        Rahmad wijaya
+                                    </li>
+                                </ol>
+                                <a href="detail_project.html" class="read-more">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="container">
-                <div class="row mt-5">
-                    <div class="row showcase col-md-12"
-                    data-aos="fade-right"
-                    data-aos-duration="1000">
-                        <div class="col-md-6 text-start">
-                            <img src="img/project3.png" alt="Project Image" class="img-fluid">
-                            <p class="developer-info fs-6 mb-0">developed by </p>
-                            <ol class="list-unstyled mt-0 fs-6">
-                                <li class="nama-developer fw-bold">
-                                    Rahmad wijaya
-                                </li>
-                            </ol>
-                            <a href="detail_project.html" class="read-more">Read More</a>
-                        </div>
-                        <div class="col-md-6 d-flex flex-column text-end">
-                            <h5 class="mt-4 mb-4 fs-3"><strong>Showcase Project</strong></h5>
-                            <p class="custom-font-size">
-                                Project adalah aktivitas atau kegiatan yang telah direncanakan
-                                untuk diselesaikan dalam waktu yang telah ditentukan dan
-                                didalamnya dialokasikan biayanya. Definisi lain, project adalah
-                                pekerjaan yang bersifat unik dan sementara.
-                            </p>
+            <section>
+                <div class="container">
+                    <div class="row mt-5 margin-project">
+                        <div class="row showcase col-md-12" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="col-md-6 text-start">
+                                <img src="img/project3.png" alt="Project Image" class="img-fluid">
+                                <p class="developer-info fs-6 mb-0">developed by </p>
+                                <ol class="list-unstyled mt-0 fs-6">
+                                    <li class="nama-developer fw-bold">
+                                        Rahmad wijaya
+                                    </li>
+                                </ol>
+                                <a href="detail_project.html" class="read-more">Read More</a>
+                            </div>
+                            <div class="col-md-6 d-flex flex-column text-end">
+                                <h5 class="mt-4 mb-4 fs-3"><strong>Showcase Project</strong></h5>
+                                <p class="custom-font-size">
+                                    Project adalah aktivitas atau kegiatan yang telah direncanakan
+                                    untuk diselesaikan dalam waktu yang telah ditentukan dan
+                                    didalamnya dialokasikan biayanya. Definisi lain, project adalah
+                                    pekerjaan yang bersifat unik dan sementara.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="container">
-                <div class="row mt-5 mb-5">
-                    <div class="row showcase col-md-12"
-                    data-aos="fade-left"
-                    data-aos-duration="1000">
-                        <div class="col-md-6 d-flex flex-column text-start">
-                            <h5 class="mt-4 mb-4 fs-3"><strong>Showcase Project</strong></h5>
-                            <p class="custom-font-size">
-                                Project adalah aktivitas atau kegiatan yang telah direncanakan
-                                untuk diselesaikan dalam waktu yang telah ditentukan dan
-                                didalamnya dialokasikan biayanya. Definisi lain, project adalah
-                                pekerjaan yang bersifat unik dan sementara.
-                            </p>
-                        </div>
-                        <div class="col-md-6 text-end">
-                            <img src="img/project4.png" alt="Project Image" class="img-fluid">
-                            <p class="developer-info fs-6 mb-0">developed by </p>
-                            <ol class="list-unstyled mt-0 fs-6">
-                                <li class="nama-developer fw-bold">
-                                    Rahmad wijaya
-                                </li>
-                            </ol>
-                            <a href="detail_project.html" class="read-more">Read More</a>
+            <section>
+                <div class="container">
+                    <div class="row mt-5 mb-5 margin-project">
+                        <div class="row showcase col-md-12" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="col-md-6 d-flex flex-column text-start">
+                                <h5 class="mt-4 mb-4 fs-3"><strong>Showcase Project</strong></h5>
+                                <p class="custom-font-size">
+                                    Project adalah aktivitas atau kegiatan yang telah direncanakan
+                                    untuk diselesaikan dalam waktu yang telah ditentukan dan
+                                    didalamnya dialokasikan biayanya. Definisi lain, project adalah
+                                    pekerjaan yang bersifat unik dan sementara.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <img src="img/project4.png" alt="Project Image" class="img-fluid">
+                                <p class="developer-info fs-6 mb-0">developed by </p>
+                                <ol class="list-unstyled mt-0 fs-6">
+                                    <li class="nama-developer fw-bold">
+                                        Rahmad wijaya
+                                    </li>
+                                </ol>
+                                <a href="detail_project.html" class="read-more">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Pagination -->
-         <section>
-            <div class="container">
+            </section>
+            <!-- Pagination -->
+            <section>
+                <div class="container">
                     <ul class="pagination justify-content-center">
                         <li class="page-item">
                             <a class="page-link text-black" href="#" aria-label="Previous">
@@ -261,58 +251,64 @@
                         <li class="page-item"><a class="page-link text-black" href="#">2</a></li>
                         <li class="page-item"><a class="page-link text-black" href="#">3</a></li>
                         <li class="page-item">
-                        <a class="page-link text-black" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
+                            <a class="page-link text-black" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
                         </li>
                     </ul>
-         </div>
-         </section>
-        <!-- End Pagination -->
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-12 col-md-4 mt-5 text-start text-md-start">
-                    <a class="text-white text-decoration-none" href="#">
-                        <img src="img/Logo_1.png" alt="Logo" width="30" height="24"
-                            class="d-inline-block align-text-top">
-                        FRECATIONER
-                    </a>
                 </div>
+            </section>
+            <!-- End Pagination -->
+        </div>
+        <!-- Project End -->
 
-                <div class="col-12 col-md-4 mt-5 text-start text-md-start">
-                    <h6>Email</h6>
-                    <a class="text-white" href="mailto:frecationer.official@gmail.com">frecationer.official@gmail.com</a>
-                    <h6 class="mt-4">Address</h6>
-                    <p>East Java - Indonesia</p>
-                </div>
+        <!-- Footer -->
+        <footer class="footer bg-black text-white">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-12 col-md-4 mt-5 text-start text-md-start">
+                        <a class="text-white text-decoration-none" href="#">
+                            <img src="img/Logo_1.png" alt="Logo" width="30" height="24"
+                                class="d-inline-block align-text-top">
+                            FRECATIONER
+                        </a>
+                    </div>
 
-                <div class="col-12 col-md-2 mt-5 text-start text-md-start">
-                    <ul class="list-unstyled pt-2">
-                        <li class="py-1"><a class="text-decoration-none text-white" href="index.html">Home</a></li>
-                        <li class="py-1"><a class="text-decoration-none text-white fw-bold" href="project.html">Project</a></li>
-                        <li class="py-1"><a class="text-decoration-none text-white" href="#">Blog</a></li>
-                        <li class="py-1"><a class="text-decoration-none text-white" href="aboutus.html">About Us</a></li>
-                    </ul>
-                </div>
+                    <div class="col-12 col-md-4 mt-5 text-start text-md-start">
+                        <h6>Email</h6>
+                        <a class="text-white"
+                            href="mailto:frecationer.official@gmail.com">frecationer.official@gmail.com</a>
+                        <h6 class="mt-4">Address</h6>
+                        <p>East Java - Indonesia</p>
+                    </div>
 
-                <div class="col-12 col-md-2 mt-5 text-start mb-3 text-md-start">
-                    <h5>Follow Us</h5>
-                    <a href="https://discord.gg/AXrwu7EXHH"><img src="img/icon discord.png" alt=""></a>
-                    <a href="https://www.instagram.com/frecationer.official/"><img src="img/icon instagram.png" alt=""></a>
+                    <div class="col-12 col-md-2 mt-5 text-start text-md-start">
+                        <ul class="list-unstyled pt-2">
+                            <li class="py-1"><a class="text-decoration-none text-white" href="index.html">Home</a></li>
+                            <li class="py-1"><a class="text-decoration-none text-white fw-bold"
+                                    href="project.html">Project</a></li>
+                            <li class="py-1"><a class="text-decoration-none text-white" href="#">Blog</a></li>
+                            <li class="py-1"><a class="text-decoration-none text-white" href="aboutus.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-2 mt-5 text-start mb-3 text-md-start">
+                        <h5>Follow Us</h5>
+                        <a href="https://discord.gg/AXrwu7EXHH"><img src="img/icon discord.png" alt=""></a>
+                        <a href="https://www.instagram.com/frecationer.official/"><img src="img/icon instagram.png"
+                                alt=""></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- Footer End -->
+        </footer>
+        <!-- Footer End -->
+    </div>
 
     <!-- JS -->
-         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
