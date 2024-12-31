@@ -1,0 +1,125 @@
+@startuml Frecationer
+
+entity Users {
+    * user_id : CHAR(10) PK
+    __
+    * foto : VARCHAR(255)
+    * nama : VARCHAR(100)
+    * username : VARCHAR(50)
+    * jk : ENUM('L','P')
+    * email : VARCHAR(50)
+    * password : VARCHAR(255)
+    * created_at : timestamp()
+    * updated_at : timestamp()
+    deleted_at : timestamps()
+}
+
+entity Members {
+    * member_id : CHAR(10) PK
+    * role_id : INT() FK 
+    __
+    * foto : VARCHAR(255)
+    * nama : VARCHAR(100)
+    * jk : ENUM('L','P')
+    * tempat_lahir : VARCHAR(50)
+    * tanggal_lahir : DATE()
+    * kecamatan : VARCHAR(50)
+    * kabupaten : VARCHAR(50)
+    * provinsi : VARCHAR(50)
+    * no_tlp : VARCHAR(15)
+    * email : VARCHAR(50)
+    * created_at : timestamp()
+    * updated_at : timestamp()
+    deleted_at : timestamps()
+}
+
+entity Roles{
+    * role_id : INT()
+    __
+    * nama_role : VARCHAR(50)
+    * created_at : timestamp()
+    * updated_at : timestamp()
+    deleted_at : timestamps()
+}
+
+entity Classes{
+    * kelas_id : INT() PK
+    __
+    * nama_kelas : VARCHAR(50)
+    * penjelasan_kelas : TEXT()
+    * deskripsi_kelas : TEXT()
+    * materi : TEXT()
+    * metode_pembelajaran : TEXT()
+    * created_at : timestamp()
+    * updated_at : timestamp()
+    deleted_at : timestamps()
+}
+
+entity Class_Histories{
+    * history_id : INT() PK
+    * member_id : CHAR(10) FK
+    * kelas_id : INT() FK
+    __
+    * status : Boolean()
+    * created_at : timestamp()
+    * updated_at : timestamp()
+    deleted_at : timestamps()
+}
+
+entity Project{
+    * project_id : INT() PK
+    __
+    * judul_project : VARCHAR(50)
+    * thumbnail_project : VARCHAR(255)
+    * tentang_project : TEXT()
+    * tujuan_project : TEXT()
+    * proses_pembuatan : TEXT()
+    * thumbnail_proses : VARCHAR(255)
+    * hasil : TEXT()
+    * thumbnail_hasil : VARCHAR(255)
+    * created_at : timestamp()
+    * updated_at : timestamp()
+    deleted_at : timestamps()
+}
+
+entity Showcase_Project{
+    * showcase_id : INT() PK
+    * member_id : CHAR(10) FK
+    * project_id : INT() FK
+    __
+    * created_at : timestamp()
+    * updated_at : timestamp()
+    deleted_at : timestamps()
+}
+
+entity FAQs{
+    * faq_id : INT() PK
+    __
+    * pertanyaan : VARCHAR(50)
+    * jawaban : VARCHAR(50)
+    * created_at : timestamp()
+    * updated_at : timestamp()
+    deleted_at : timestamps()
+}
+
+entity profil{
+    * profil_id : INT() PK
+    __
+    * logo_komunitas : VARCHAR(255)
+    * nama_komunitas : VARCHAR(50)
+    * deskripsi : TEXT()
+    * visi : TEXT()
+    * misi : TEXT()
+    * foto : VARCHAR(255)
+    * created_at : timestamp()
+    * updated_at : timestamp()
+    deleted_at : timestamps()
+}
+
+Roles ||--|{ Members
+Members ||--|{ Class_Histories
+Classes ||--|{ Class_Histories
+Project ||--|{ Showcase_Project
+Members ||--|{ Showcase_Project
+
+@enduml
