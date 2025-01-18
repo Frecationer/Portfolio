@@ -1,11 +1,3 @@
-// window.addEventListener('scroll', function() {
-//   var scrollTopButton = document.querySelector('.scroll-to-top');
-//   if (window.scrollY > 100) {
-//     scrollTopButton.style.display = 'block';
-//   } else {
-//     scrollTopButton.style.display = 'none';
-//   }
-// });
 let scrollTop = document.querySelector('.scroll-top');
 
   function toggleScrollTop() {

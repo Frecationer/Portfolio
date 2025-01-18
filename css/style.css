@@ -380,6 +380,7 @@ hr {
   width: 100%;
   max-width: 15rem;
   margin: 0 auto;
+  
 }
 
 .collapse .col-md-10{
@@ -396,7 +397,42 @@ hr {
   margin-left: 10px;
 }
 
-@media (max-width: 900px) {
+.horizontal-scroll-wrapper {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 50px;
+  max-width: calc(4 * 240px);
+  margin: 0 auto;
+  padding-bottom: 16px;
+  scroll-behavior: smooth;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-indicators {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.scroll-indicators .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-indicators .dot.active {
+  background-color: #4cafef;
+}
+
+@media (max-width: 900px) {  
   .decorative-background {
     background-image: url("../img/gambar_hiasan.png");
     background-size: contain;
@@ -464,44 +500,6 @@ hr {
   .page3 .card a {
     font-size: 0.9rem;
   }
-  .page2 .container {
-    padding: 0 15px;
-  }
-
-  .page2 .row.text-center h4 {
-    font-size: 1.5rem;
-  }
-
-  .page2 .row.text-center p {
-    font-size: 1rem;
-  }
-
-  .page2 .row.justify-content-center .col-md {
-    margin: 3rem 0;
-  }
-
-  .page2 .row.align-item-center .col-md-2 {
-    margin: 1rem 0;
-  }
-
-  .page2 .card {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .page2 .card img {
-    width: 100%;
-    height: auto;
-  }
-
-  .page2 .border-color {
-    margin-top: 40px;
-    background-color: #f4f7fe;
-    background: linear-gradient(#f4f7fe, #f4f7fe) padding-box,
-      linear-gradient(to bottom, #1c42fd, #3ce9e7) border-box;
-    border-radius: 50em;
-    border: 3px solid transparent;
-  }
 
   .p-3.mb-2.bg-dark-subtle.text-dark-emphasis{
     margin: auto;
@@ -510,6 +508,21 @@ hr {
 }
 
 @media (max-width: 767px) {
+  .border-color {
+    border-radius: 3rem !important;
+    background: linear-gradient(#f4f7fe, #f4f7fe) padding-box,
+      linear-gradient(to bottom, #1c42fd, #3ce9e7) border-box;
+    margin: 0 0;
+    border: 2px solid transparent;
+  }
+
+  .horizontal-scroll-wrapper {
+    gap: 10px;
+    max-width: calc(2 * 100px);
+    padding-bottom: 0px;
+    margin-top: 20px;
+  }
+
   .decorative-background {
     background-image: url("../img/gambar_hiasan.png");
     background-size: contain;
@@ -549,10 +562,6 @@ hr {
     padding: 1.5rem 1rem;
   }
 
-  .page2 .container {
-    padding: 0 15px;
-  }
-
   .page2 .row.text-center h4 {
     font-size: 1.5rem;
   }
@@ -575,18 +584,9 @@ hr {
   }
 
   .page2 .card img {
-    width: 50%;
+    width: 70%;
     height: auto;
     margin: auto;
-  }
-
-  .page2 .border-color {
-    margin-top: 40px;
-    background-color: #f4f7fe;
-    background: linear-gradient(#f4f7fe, #f4f7fe) padding-box,
-      linear-gradient(to bottom, #1c42fd, #3ce9e7) border-box;
-    border-radius: 50em;
-    border: 3px solid transparent;
   }
 
   .page3 .container {
@@ -660,8 +660,8 @@ hr {
   }
 
   .ourteam .col-md-3 {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    max-width: 70%;
   }
 
   .main-content {
@@ -710,10 +710,30 @@ hr {
   }
 
   .img-fluid{
-    width: 70%;
+    width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
+  }
+
+  .visimisi{
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 353px){
+  .visimisi{
+    padding: 1rem 2rem;
+  }
+
+  .page2 a{
+    border-radius: 10px;
+  }
+
+  .p-3.mb-2.bg-dark-subtle.text-dark-emphasis{
+    margin: auto;
+    width: 330px;
   }
 }
