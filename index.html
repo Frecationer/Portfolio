@@ -139,14 +139,15 @@
           </p>
           <hr />
         </div>
-        <a href="detail_class.html" style="text-decoration: none; color: inherit;">
+        <div style="color: inherit;">
           <div class="row justify-content-center mt-5 border-color" data-aos="fade-left" data-aos-duration="1000">
             <div class="col-md text-center m-4">
               <div class="title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1500">
                 <h4 class="mb-3"><strong>Our Class</strong></h4>
                 <p>the class of expertise that we have</p>
-              </div>
-              <div class="horizontal-scroll-wrapper" style="margin-top: 50px;" data-aos="fade-up"
+              </div>              
+              <span class="arrow" id="prev-arrow"><i class="fas fa-chevron-left"></i></span>
+              <a href="detail_class.html" class="horizontal-scroll-wrapper" style="margin-top: 50px; text-decoration: none;" data-aos="fade-up"
                 data-aos-duration="1000" data-aos-delay="1500">
                 <div class="col-md-2 mx-4 text-center class-card">
                   <div class="card">
@@ -196,14 +197,15 @@
                     <p>Nama Kelas</p>
                   </div>
                 </div>
-              </div>
+              </a>
+              <span class="arrow" id="next-arrow"><i class="fas fa-chevron-right"></i></span>
               <div class="scroll-indicators">
                 <span class="dot active" onclick="scrollToClass(0)"></span>
                 <span class="dot" onclick="scrollToClass(1)"></span>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </section>
 
@@ -398,7 +400,28 @@
         dot.classList.toggle("active", i === activeGroup);
       });
     });
+  </script>
 
+  <script>
+    const scrollWrapper = document.querySelector('.horizontal-scroll-wrapper');
+    const prevArrow = document.getElementById('prev-arrow');
+    const nextArrow = document.getElementById('next-arrow');
+
+    const scrollAmount = 300; // Jumlah scroll per klik (px)
+
+    prevArrow.addEventListener('click', () => {
+        scrollWrapper.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    nextArrow.addEventListener('click', () => {
+        scrollWrapper.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
   </script>
 </body>
 

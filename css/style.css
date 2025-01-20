@@ -397,12 +397,16 @@ hr {
   margin-left: 10px;
 }
 
+.row {
+  position: relative;
+}
+
 .horizontal-scroll-wrapper {
   display: flex;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  gap: 50px;
-  max-width: calc(4 * 240px);
+  gap: 40px;
+  max-width: calc(4 * 220px);
   margin: 0 auto;
   padding-bottom: 16px;
   scroll-behavior: smooth;
@@ -432,7 +436,42 @@ hr {
   background-color: #4cafef;
 }
 
-@media (max-width: 900px) {  
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: #b6b4b4;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  color: #a3a3a3;
+}
+
+#prev-arrow {
+  left: 0;
+  margin-left: 40px;
+}
+
+#next-arrow {
+  right: 0;
+  margin-right: 40px;
+}
+
+@media (max-width: 900px) {
+
+  .horizontal-scroll-wrapper {
+    gap: 35px;
+    max-width: calc(3 * 150px);
+  }
+
+  .page2 .card {
+    width: 100px;
+    margin: 0 auto;
+  }
+
   .decorative-background {
     background-image: url("../img/gambar_hiasan.png");
     background-size: contain;
@@ -508,6 +547,15 @@ hr {
 }
 
 @media (max-width: 767px) {
+
+  #prev-arrow {
+    margin-left: 20px;
+  }
+  
+  #next-arrow {
+    margin-right: 20px;
+  }
+
   .border-color {
     border-radius: 3rem !important;
     background: linear-gradient(#f4f7fe, #f4f7fe) padding-box,
@@ -517,8 +565,8 @@ hr {
   }
 
   .horizontal-scroll-wrapper {
-    gap: 10px;
-    max-width: calc(2 * 100px);
+    gap: 50px;
+    max-width: calc(1 * 250px);
     padding-bottom: 0px;
     margin-top: 20px;
   }
@@ -579,12 +627,12 @@ hr {
   }
 
   .page2 .card {
-    width: 100%;
+    width: 200px;
     margin: 0 auto;
   }
 
   .page2 .card img {
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: auto;
   }
@@ -713,13 +761,37 @@ hr {
     width: 100%;
     height: auto;
     display: block;
-    margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
   }
 
   .visimisi{
     padding: 1rem 4rem;
+  }
+
+  .showcase {
+    flex-direction: column;
+  }
+
+  .showcase .showcase-srart{
+      order: 1;
+  }
+
+  .showcase .showcase-end {
+      order: 2;
+  }
+
+  .showcase img {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+
+  .showcase .developer-info {
+      margin-bottom: 10px;
+  }
+
+  .text-end {
+    text-align: left !important;
   }
 }
 
